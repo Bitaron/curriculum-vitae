@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times New Roman} %Hoefler Text Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Times New Roman} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Sk. Kamruzzaman}\\ % Your name
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+{\raggedleft\textsc{Part Time}}
+{\raggedleft\textsc{Jan 2014 - Sept 2015}\par}
+{\raggedleft\textsc{Full Time}}
+{\raggedleft\textsc{Oct 2015 - Nov 2016}\par}
+{\raggedright\large Questtag Inc, New York\\
+\textit{\href {http://www.questtag.com}{http://www.questtag.com}}\\[5pt]}
+
+\textsc{- Manage the road map for product design and development.}\\
+\textsc{- Design server and browser client.}\\
+\textsc{- Implement restful API for company-wide deployment and integration with third parties.}\\
+\textsc{- Oversee API consumption of browser and mobile clients.}\\
+\textsc{- Draft technical documents.}\\
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Projects} 
+
+%------------------------------------------------
+%	PROJECT 1
+%------------------------------------------------
+
+
+{\raggedright\large Questtag delivery solution at \textsc{Questtag Inc}\\
+\large\textbf{\href{https://dashboard.questtag.com}{QT dashboard}}\\[5pt]}
+
+\textsc{- \href{http://www.questtag.com/features/}{QT dashboard features.}}\\
+
+
+%------------------------------------------------
+%	PROJECT 2
+%------------------------------------------------
+
+
+{\raggedright\large Sample Build System \\
+	\large\textbf{\href {https://github.com/Bitaron/java-maven}{java-maven}, \href{https://github.com/Bitaron/java-sbt}{java-sbt},\href{https://github.com/Bitaron/js}{javascript}}\\[5pt]}
+\textsc{- Reliable and reproducible build systems.}\\
+\textsc{- Basic use of \textit{maven} and \textit{sbt}. }\\
+\textsc{- Seed project for \textit{JAX-RX} with \textit{JPA} and \textit{PLAY} with \textit{ebean}.}\\
+\textsc{- Basic use of \textit{node} and \textit{jake} for front end development. }\\
+\textsc{- Seed project for \textit{react.js} with \textit{flux}.}\\
+\normalsize{}\\
+
+
+
+%------------------------------------------------
+%	PROJECT 3
+%------------------------------------------------
+
+
+{\raggedright\large Web API Security \\
+	\large\textbf{\href {https://github.com/Bitaron/java-maven/tree/security}{java-maven}}\\[5pt]}
+\textsc{- \textit{Maven} archetype for  \textit{JAX-RX} security.}\\
+\textsc{- Implementation of  \textit{BASIC AUTH} and  \textit{JWT}.}\\
+
+
+%------------------------------------------------
+%	PROJECT 4
+%------------------------------------------------
+
+
+{\raggedright\large Weather Application \\
+	\large\textbf{\href {https://github.com/Bitaron/js/tree/weather}{react-flux}}\\[5pt]}
+\textsc{- It shows the temperature and current local time base city.}\\
+\textsc{- Implementation of  \textit{react.js} and  \textit{flux} architecture.}\\
+\textsc{- Testing  \textit{flux} using \textit{jasmine}.}\\
+
+
+%------------------------------------------------
+%	PROJECT 5
+%------------------------------------------------
+
+
+{\raggedright\large Silent \\
+	\large\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/silent.apk}{android}}\\[5pt]}
+\textsc{- Turn mobile silent based on predefined time.}\\
+\textsc{- Support \textit{geofence} activation.}\\
+\textsc{- Basic use of \textit{android} and \textit{gradle}.}\\
+
+
+%------------------------------------------------
+%	PROJECT 4
+%------------------------------------------------
+
+
+{\raggedright\large Lets go \\
+	\large\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/letsgo.apk}{android-node}}\\[5pt]}
+\textsc{- Based on users location provides information about nearby places.}\\
+\textsc{- Basic use of \textit{node-express-mongo} stack, \textit{android} api consumption and account management.}\\
+\textsc{- Sample use of \textit{retrofit} and \textit{google map} features.}\\
+
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 5/28 Mirpur-7/4d , Dhaka-1216 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +880-01791693643 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:bitaron90@gmail.com}{bitaron90@gmail.com} \\ % Email address
+%\Keyboard & \href{http://www.johnsmith.com}{http://www.johnsmith.com} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\section{About Me}
+\normalsize{Highly dependable Software Engineer and enthusiastic team player dedicated to streamlining processes and efficiently resolving project issues. Capable of applying design patterns to solve real world problems. Strongly motivated to use decoupled design architecture.}\\
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2015 --  & \textbf{Bachelor of Science} \\ 
+& \textsc{Computer Science and Engineering} \\ 
+& \textit{Bangladesh University of Engineering and Technology}\\
+& \textit{CGPA: 3.00/4}\\
+&\\
+	 
+
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Language Skill} 
+
+\begin{tabular}{rl}
+Basic Knowledge
+& \textsc{C family of language}, \LaTeX\\ 
+&HTML \& css\\
+& \\
+
+Intermediate Knowledge
+& \textsc{java}, \textsc{javascript \& node},\\
+& Shell scripts, php,\\
+& SQL \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TOOL
+%----------------------------------------------------------------------------------------
+
+\section{ToolS} 
+
+\begin{tabular}{rl}
+\textsc{Library \& Framework}
+& Maven, SBT, JAX-RX, JPA\\
+& Jake, React.js, Flux, Jasmine. \\
+& Laravel, Play \\
+& Android, Unity\\
+& \\
+
+\textsc{Architecture \& Design}
+& Object oriented design\\
+& Modular Architecture\\
+& Known Design patterns \\
+& Test Driven Development\\
+&\\
+
+\textsc{Others}
+& Nginx, Apache, Tomcat\\
+& Amazon AWS.\\
+&\\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	PRINCIPLES
+%----------------------------------------------------------------------------------------
+
+\section{Principles} 
+
+\begin{tabular}{rl}
+	\textsc{}
+	& Clean Code. \\
+	& Reliable and Reproducible Build System.\\
+	& Self testing Code base.\\
+	& Feedback Loop.\\
+	& Separation of Concerns.\\
+	& \\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
