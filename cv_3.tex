@@ -23,6 +23,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+\usepackage{graphicx}
+\usepackage{float}
 
 \usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
 
@@ -68,7 +70,7 @@
 
 \begin{document}
 
-\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+\color{text1} % Sets the default text c\textitolor for the whole document to the color defined as 'text1'
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -91,18 +93,19 @@
 %------------------------------------------------
 % WORK EXPERIENCE 1
 %------------------------------------------------
-{\raggedleft\textsc{Part Time}}
-{\raggedleft\textsc{Jan 2014 - Sept 2015}\par}
-{\raggedleft\textsc{Full Time}}
-{\raggedleft\textsc{Oct 2015 - Nov 2016}\par}
-{\raggedright\large Questtag Inc, New York\\
-\textit{\href {http://www.questtag.com}{http://www.questtag.com}}\\[5pt]}
+{{\raggedright\large Questtag Inc, New York  \\
+\textit{\href {http://www.questtag.com}{http://www.questtag.com}}\\
+}\raggedleft\textsc{Jan 2014 - Nov 2016}\\[1pt]}
+\textbf{Back End}\\
+	 \textsc{- Develop Rest Api using \textit{java} and \textit{play framework}.}\\
+	 \textsc{- Design and Maintain Production Database in \textit{mysql}.}\\
+	 \textsc{- Co-ordinate with Mobile and Browser clients.}\\
+	 \textsc{- End-to-End Testing and Quality Assurance.}\\
+	 \textsc{- Create Documentation for both public and internal use.}\\
+\textbf{Front End}\\	
+	 \textsc{- Implement Api consumption module in \textit{jquery}.}\\
+	 \textsc{- Develop Application, Data manager \& Adapter module.}\\
 
-\textsc{- Manage the road map for product design and development.}\\
-\textsc{- Design server and browser client.}\\
-\textsc{- Implement restful API for company-wide deployment and integration with third parties.}\\
-\textsc{- Oversee API consumption of browser and mobile clients.}\\
-\textsc{- Draft technical documents.}\\
 
 
 %----------------------------------------------------------------------------------------
@@ -117,9 +120,10 @@
 
 
 {\raggedright\large Questtag delivery solution at \textsc{Questtag Inc}\\
-\large\textbf{\href{https://dashboard.questtag.com}{QT dashboard}}\\[5pt]}
+\large\textbf{\href{https://dashboard.questtag.com}{https://dashboard.questtag.com}}\\[2pt]
+}
 
-\textsc{- \href{http://www.questtag.com/features/}{QT dashboard features.}}\\
+\textsc{- \href{http://www.questtag.com/features/}{QT dashboard features.}(http://www.questtag.com/features/)}\\
 
 
 %------------------------------------------------
@@ -127,13 +131,12 @@
 %------------------------------------------------
 
 
-{\raggedright\large Sample Build System \\
-	\large\textbf{\href {https://github.com/Bitaron/java-maven}{java-maven}, \href{https://github.com/Bitaron/java-sbt}{java-sbt},\href{https://github.com/Bitaron/js}{javascript}}\\[5pt]}
-\textsc{- Reliable and reproducible build systems.}\\
-\textsc{- Basic use of \textit{maven} and \textit{sbt}. }\\
-\textsc{- Seed project for \textit{JAX-RX} with \textit{JPA} and \textit{PLAY} with \textit{ebean}.}\\
-\textsc{- Basic use of \textit{node} and \textit{jake} for front end development. }\\
-\textsc{- Seed project for \textit{react.js} with \textit{flux}.}\\
+{\raggedright\large Build Systems \\
+	\textbf{\href {https://github.com/Bitaron/java-maven}{https://git.io/v15lc}(mvn), \href{https://github.com/Bitaron/java-sbt}{https://git.io/v15lW}(sbt)
+		\href{https://github.com/Bitaron/js}{https://git.io/v15l4}(js)}\\[5pt]}
+\textsc{- Use of \textbf{maven} with \textbf{JAX-RX} \& \textbf{JPA}. }\\
+\textsc{- Use of \textbf{sbt} with \textbf{Play} \& \textbf{Ebean}..}\\
+\textsc{- Build system using \textbf{node} and \textbf{jake}}\\
 \normalsize{}\\
 
 
@@ -144,9 +147,9 @@
 
 
 {\raggedright\large Web API Security \\
-	\large\textbf{\href {https://github.com/Bitaron/java-maven/tree/security}{java-maven}}\\[5pt]}
-\textsc{- \textit{Maven} archetype for  \textit{JAX-RX} security.}\\
-\textsc{- Implementation of  \textit{BASIC AUTH} and  \textit{JWT}.}\\
+	\textbf{\href {https://github.com/Bitaron/java-maven/tree/security}{https://git.io/v15lO}}\\[5pt]}
+\textsc{- Use of \textbf{JAX-RX security context}.}\\
+\textsc{- Implementation of  \textbf{BASIC AUTH} and  \textbf{JWT}.}\\
 
 
 %------------------------------------------------
@@ -155,10 +158,10 @@
 
 
 {\raggedright\large Weather Application \\
-	\large\textbf{\href {https://github.com/Bitaron/js/tree/weather}{react-flux}}\\[5pt]}
-\textsc{- It shows the temperature and current local time base city.}\\
-\textsc{- Implementation of  \textit{react.js} and  \textit{flux} architecture.}\\
-\textsc{- Testing  \textit{flux} using \textit{jasmine}.}\\
+	\textbf{\href {https://github.com/Bitaron/js/tree/weather}{https://git.io/v15lR}}\\[5pt]}
+\textsc{- Display temperature and current local time based on city.}\\
+\textsc{- Use of \textbf{react.js} and \textbf{flux} architecture.}\\
+\textsc{- Testing \textbf{flux} using \textbf{jasmine}.}\\
 
 
 %------------------------------------------------
@@ -167,10 +170,9 @@
 
 
 {\raggedright\large Silent \\
-	\large\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/silent.apk}{android}}\\[5pt]}
-\textsc{- Turn mobile silent based on predefined time.}\\
-\textsc{- Support \textit{geofence} activation.}\\
-\textsc{- Basic use of \textit{android} and \textit{gradle}.}\\
+	\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/silent.apk}{http://bit.ly/2he7hd5}}\\[5pt]}
+\textsc{- Turn mobile silent based on predefined time and \textbf{geofence}.}\\
+\textsc{- Use of \textbf{gradle}.}\\
 
 
 %------------------------------------------------
@@ -179,10 +181,10 @@
 
 
 {\raggedright\large Lets go \\
-	\large\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/letsgo.apk}{android-node}}\\[5pt]}
-\textsc{- Based on users location provides information about nearby places.}\\
-\textsc{- Basic use of \textit{node-express-mongo} stack, \textit{android} api consumption and account management.}\\
-\textsc{- Sample use of \textit{retrofit} and \textit{google map} features.}\\
+	\textbf{\href {https://dl.dropboxusercontent.com/u/84146203/projects/android/letsgo.apk}{http://bit.ly/2hwlipz}}\\[5pt]}
+\textsc{- List nearby places based on users location and preference}\\
+\textsc{- Use of \textbf{node-express-mongo} stack}\\
+\textsc{- Use of \textbf{retrofit},\textbf{android account} \& \textbf{google map}}\\
 
 
 %----------------------------------------------------------------------------------------	
@@ -196,6 +198,15 @@
 %	COLORED BOX
 %----------------------------------------------------------------------------------------
 
+\begin{minipage}[t]{0.3\textwidth}
+{\raggedleft\begin{figure}[H]
+	\includegraphics[width=\textwidth]{pic.jpg}
+\end{figure}}
+\end{minipage} % End the left-hand side of the page
+
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} 
+{\raggedright	
 \colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
 \raisebox{-4pt}{\textifsymbol{18}} & 5/28 Mirpur-7/4d , Dhaka-1216 \\ % Address
@@ -205,7 +216,8 @@
 \end{tabular}
 }
 }\\[10pt]
-
+}
+\end{minipage}
 %----------------------------------------------------------------------------------------
 %	ABOUT ME
 %----------------------------------------------------------------------------------------
@@ -248,8 +260,8 @@ Basic Knowledge
 & \\
 
 Intermediate Knowledge
-& \textsc{java}, \textsc{javascript \& node},\\
-& Shell scripts, php,\\
+& \textsc{java}, \textsc{javascript},\\
+& Shell script, php,\\
 & SQL \\
 \end{tabular}
 
@@ -262,17 +274,11 @@ Intermediate Knowledge
 \begin{tabular}{rl}
 \textsc{Library \& Framework}
 & Maven, SBT, JAX-RX, JPA\\
-& Jake, React.js, Flux, Jasmine. \\
+& Node,Jake, React.js, Flux, Jasmine. \\
 & Laravel, Play \\
 & Android, Unity\\
 & \\
 
-\textsc{Architecture \& Design}
-& Object oriented design\\
-& Modular Architecture\\
-& Known Design patterns \\
-& Test Driven Development\\
-&\\
 
 \textsc{Others}
 & Nginx, Apache, Tomcat\\
@@ -290,8 +296,8 @@ Intermediate Knowledge
 	\textsc{}
 	& Clean Code. \\
 	& Reliable and Reproducible Build System.\\
-	& Self testing Code base.\\
 	& Feedback Loop.\\
+	& Self testing Code base.\\
 	& Separation of Concerns.\\
 	& \\
 \end{tabular}\\[10pt]
